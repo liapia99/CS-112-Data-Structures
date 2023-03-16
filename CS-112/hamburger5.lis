@@ -1,0 +1,88 @@
+############################
+# File: hamburger5.py
+# Author: Julia Piascik
+# Date: September 8th, 2022
+# Purpose: Pre-test loop
+############################
+
+# print headings
+
+print("\n Hamburger 5 Pre-test Loop...")
+print("===============================")
+
+# Initialize variable answer to 'Y'
+
+answer = 'Y'
+
+while answer == 'Y' or answer =='y':
+
+    # input order and amount receivedd from customer
+    noBigHugo = input("\n Enter amount of Big Hugo burgers desired ==> ")
+    noDoubCheese = input("\n Enter amount of Double Cheese burgers desired ==> ")
+    noCheese = input("\n Enter amount of Cheese burgers desired ==> ")
+    amtGiven = input("\n Enter dollar amount given by customer ==$")
+
+    # constant declarations
+    priceBigHugo = 3.27
+    priceDoubCheese = 2.50
+    priceCheese = 1.55;
+
+    # calc cost of burgers
+    costBigHugo = float(noBigHugo) * (priceBigHugo)
+    costDoubCheese = float(noDoubCheese) * (priceDoubCheese)
+    costCheese = float(noCheese) * (priceCheese)
+
+    # calc total cost of all burgers
+    total = costBigHugo + costDoubCheese + costCheese
+
+    # calc change from 20 dollars
+    change = float(amtGiven) - total
+
+    # output cost and change
+    print("\n The total cost of these burgers is $", total)
+    print("\n Your change from", amtGiven, "dollars is $", change)
+
+    # prompt the user for more orders
+    answer = input("\nDo again? (Y/N)")
+
+# end while loop
+print("\n ... end of job! ... \n")
+
+# end main
+
+========= RESTART: /Users/juliapiascik/Documents/CS 111-B/hamburger5.py ========
+
+ Hamburger 5 Pre-test Loop...
+===============================
+
+ Enter amount of Big Hugo burgers desired ==> 2
+
+ Enter amount of Double Cheese burgers desired ==> 1
+
+ Enter amount of Cheese burgers desired ==> 1
+
+ Enter dollar amount given by customer ==$30
+
+ The total cost of these burgers is $ 10.59
+
+ Your change from 30 dollars is $ 19.41
+
+Do again? (Y/N)y
+
+ Enter amount of Big Hugo burgers desired ==> 2
+
+ Enter amount of Double Cheese burgers desired ==> 0
+
+ Enter amount of Cheese burgers desired ==> 1
+
+ Enter dollar amount given by customer ==$20
+
+ The total cost of these burgers is $ 8.09
+
+ Your change from 20 dollars is $ 11.91
+
+Do again? (Y/N)n
+
+ ... end of job! ... 
+
+    
