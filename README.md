@@ -1,2 +1,2 @@
-# Hello-Test
-Python "Hello World" test for Sacred Heart University 
+
+Python Classwork, Homework and Projects for Sacred Heart University 
